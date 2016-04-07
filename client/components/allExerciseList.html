@@ -1,0 +1,11 @@
+<template name='allExerciseList'>
+	<div class='exercises'>
+		We currently have {{count}} exercises in our database.	<br>
+		{{#each exercise}}
+			<div class='exerciseName'>{{name}}</div>
+			{{#each tags}}
+				<div class='exerciseTag'>{{text}}</div>
+			{{/each}}<br>
+		{{/each}}
+	</div>
+</template>
